@@ -6,7 +6,7 @@ import EquipmentName from "@/compnents/EquipmentName";
 
 const page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start p-8">
+    <main className="flex min-h-dvh flex-col items-center justify-start p-8">
       <div className="w-full flex justify-center p-8 bg-white rounded-lg ">
         <EquipmentName />
         <div className="w-full max-w-screen-xl py-52 bg-jayma-tan rounded-lg">
