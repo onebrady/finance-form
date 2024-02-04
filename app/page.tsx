@@ -1,13 +1,19 @@
 "use client";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
   function handleSubmit(event: any) {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
-    console.log(data);
+    localStorage.setItem("EquipmentName", JSON.stringify(data.EquipmentName));
+    localStorage.setItem("price", JSON.stringify(data.price));
+    console.log(data.EquipmentName, data.price);
+    router.push("/form");
   }
 
   return (
