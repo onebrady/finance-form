@@ -12,7 +12,7 @@ const page = () => {
         <div className="w-full max-w-screen-xl py-52 bg-jayma-tan rounded-lg">
           <div className="flex justify-center items-center flex-col">
             <Image
-              className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+              className="relative"
               src="/jayma-cover.jpg"
               alt="MulchMule Logo"
               width={379}
