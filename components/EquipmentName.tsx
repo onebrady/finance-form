@@ -9,7 +9,7 @@ const EquipmentName = () => {
       setEquipmentName(JSON.parse(storedEquipmentName));
     }
   }, []);
-  return <div>{equipmentName}</div>;
+  return <h2 className="p-4">{equipmentName}</h2>;
 };
 
 export default EquipmentName;
